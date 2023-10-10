@@ -1,0 +1,16 @@
+/* SecondaryFooter.css */
+
+.secondary-footer {
+  text-align: center;
+  padding: 1px 0;
+  background-color: #000000; /* Choose a background color */
+  max-height: 20px;
+}
+
+.copyright {
+  font-size: 0.8em;
+  font-family: monospace;
+  font-size: smaller;
+  color: #fff; /* Choose a color that fits your design */
+  margin: 0; /* Remove margin */
+}

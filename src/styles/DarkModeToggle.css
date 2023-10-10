@@ -1,0 +1,18 @@
+.dark-mode-toggle {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  display: block;
+}
+
+.dark-mode-toggle button {
+  background: none;
+  border: none;
+  font-size: 24px;
+  color: #0a0a0a;
+  cursor: pointer;
+}
+
+.dark-mode-toggle.dark button {
+  color: #f6f1f1;
+}

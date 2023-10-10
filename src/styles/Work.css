@@ -1,0 +1,126 @@
+/* Work.css */
+
+.work-section {
+  text-align: center;
+  padding: 50px 0;
+  margin-top: auto;
+  height: auto;
+  position: relative;
+}
+
+.work-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  max-width: 950px;
+  margin: 0 auto;
+  height: auto;
+  margin-top: auto;
+}
+
+.work-card {
+  position: relative;
+  max-width: 300px;
+  width: 100%;
+  height: 200px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.work-card img {
+  max-width: 100%;
+  height: 100%;
+  border-radius: 8px;
+}
+
+.card-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.8);
+  border-radius: 8px;
+  width: 100%;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.work-card:hover {
+  transform: translateY(-5px);
+}
+
+.work-card:hover .card-overlay {
+  opacity: 1;
+  height: 160px;
+  width: 260px;
+}
+
+.card-overlay h3 {
+  color: #fff;
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+
+.card-overlay a {
+  display: inline-block;
+  padding: 8px 16px;
+  background-color: #007bff;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.card-overlay a:hover {
+  background-color: #0056b3;
+}
+.work-section h2 {
+  color: aliceblue;
+  align-items: center;
+  font-family: Georgia, serif;
+  max-width: 170px;
+  margin-left: 850px;
+}
+/* Work.css */
+
+/* ... (existing styles) */
+
+.percentage-meter {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.meter-wrapper {
+  background-color: #f3f3f3;
+  border-radius: 10px;
+  display: inline-block;
+  width: 300px;
+  margin-top: 10px;
+}
+
+.meter {
+  background-color: #007bff;
+  border-radius: 10px;
+  height: 20px;
+  width: 0;
+  transition: width 2s;
+}
+
+.meter-text {
+  margin-top: 20px;
+}
+
+.icon-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.icon {
+  font-size: 30px;
+  margin: 0 10px;
+}

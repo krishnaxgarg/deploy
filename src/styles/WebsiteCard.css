@@ -1,0 +1,39 @@
+.website-card {
+  background-color: #fff;
+  border: 1px solid #e5e5e5;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s;
+  margin: 10px;
+  max-width: calc(50% - 20px); /* Adjusted max-width */
+  width: calc(50% - 20px); /* Adjusted width */
+  height: 350px; /* Adjusted height */
+}
+
+.website-card:hover {
+  transform: translateY(-5px);
+}
+
+.website-card h3 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.website-card a {
+  display: inline-block;
+  padding: 8px 16px;
+  border: 1px solid #007bff;
+  border-radius: 4px;
+  background-color: #007bff;
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.website-card a:hover {
+  background-color: #0056b3;
+}

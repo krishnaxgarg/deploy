@@ -1,0 +1,201 @@
+.header {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.video-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.video-bg {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+.white-screen {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  animation: fade 1s forwards;
+}
+
+@keyframes fade {
+  100% {
+    opacity: 1;
+  }
+}
+
+.text-overlay {
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  transform: translateY(-50%);
+  text-align: left;
+  z-index: 2;
+}
+
+.text-overlay h1 {
+  font-size: 5rem;
+  font-family: "Arial", sans-serif;
+  font-weight: bold;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+.text-overlay h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  font-family: "Arial", sans-serif;
+  color: rgb(255, 255, 255);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+.nav {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  display: flex;
+  gap: 10px;
+}
+
+.nav-btn {
+  background: none;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 1.5rem;
+  transition: transform 0.3s;
+  text-decoration: none !important;
+  outline: none;
+  margin-left: 5px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+.contact-btn {
+  background: none;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 1.5rem;
+  transition: transform 0.3s;
+  text-decoration: none !important;
+  outline: none;
+  margin-left: 5px;
+  padding-right: 20px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+.contact-btn {
+  margin-left: auto;
+  margin-right: 15px; /* Added margin-right */
+}
+.nav-btn:hover {
+  transform: scale(1.1);
+  text-decoration: solid;
+  color: rgb(222, 199, 189);
+}
+.contact-btn:hover {
+  transform: scale(1.1);
+  text-decoration: underline;
+  color: rgb(222, 199, 189);
+  transform: scale(1.1);
+}
+
+.header.scrolled .video-container {
+  z-index: -1;
+}
+
+.header.scrolled .about-container {
+  z-index: 1;
+  transform: translate(-50%, -50%) scale(1);
+}
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: none;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  z-index: 1;
+}
+.nav-group {
+  display: flex;
+}
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translateX(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.header .navbar {
+  transition: background-color 0.3s ease, opacity 0.5s ease, transform 0.5s ease;
+  animation: fadeInRight 0.5s ease; /* Apply the fade-in animation */
+}
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translateX(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.header.scrolled .navbar {
+  background-color: black;
+  width: 50%;
+  margin-right: 25%;
+  margin-left: 25%;
+  box-shadow: 4px 6px 12px rgba(0, 0, 0, 0.4);
+  animation: none; /* Disable the animation when background color changes */
+}
+.dark-mode .navbar {
+  background-color: none; /* Change navbar color for dark mode */
+}
+
+.dark-mode .nav-btn {
+  color: #fff; /* Change text color for nav buttons in dark mode */
+}
+.dark-mode-toggle {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  z-index: 999; /* Ensure it's above other elements */
+}
+
+.dark-mode-toggle button {
+  background-color: transparent;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+.role-transition {
+  display: inline-block;
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.role-transition.hidden {
+  opacity: 0;
+}
